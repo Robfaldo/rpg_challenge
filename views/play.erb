@@ -1,1 +1,7 @@
-<h1> <%= "#{@player_1} vs #{@player_2}" %></h1>
+<h1> <%= "#{@player_1} vs #{@player_2}" %> </h>
+
+  <h1> <%= "#{@player_1} vs #{@player_2_hitpoints}" %> </h>
+
+<div class="player_2_hitpoints">
+ <progress value=<%= @player_2_hitpoints.to_s %> max="100" ></progress>
+</div>
