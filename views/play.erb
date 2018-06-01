@@ -1,4 +1,4 @@
-<h1> <%= @player_1.name %> vs <%= @player_2.name %> </h>
+<h1> <%= @game.player1.name %> vs <%= @game.player2.name %> </h>
 
 <form action="/attack" method="post">
   <button type="submit" name="attack_p2" formmethod="post">
@@ -7,11 +7,11 @@
 </form>
 
 <% if @attacked %>
-  Your attack on <%= @player_2.name %> landed!
+  Your attack on <%= @game.player2.name %> landed!
 <% end %>
 
 <div class="player_2_hitpoints">
-<%= @player_2.name %>'s HP
- <progress value=<%= @player_2.hp %>
+<%= @game.player2.name %>'s HP
+ <progress value=<%= @game.player2.hp %>
  max="100" ></progress>
 </div>
