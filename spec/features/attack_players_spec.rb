@@ -12,4 +12,10 @@ feature 'Attack players: ' do
     expect(page).to have_content "landed!"
   end
 
+  scenario 'attack landed isnt shown before p1 attacks' do
+    # Setup
+    sign_in_and_play
+    # Verification
+    expect(page).not_to have_content "landed!"
+  end
 end
