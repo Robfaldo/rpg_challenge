@@ -13,11 +13,8 @@ feature 'Hitpoints: ' do
   # So I can start to win a game of Battle,
   # I want my attack to reduce Player 2's HP by 10
   scenario 'When p1 attacks p2, p2s health reduces by 10' do
-    # Setup
     sign_in_and_play
-    # Exercise
     click_button('ATTACK!')
-    # Verification
     expect(find('progress')['value']).to eq "90"
   end
 end
