@@ -6,6 +6,12 @@
   </button>
 </form>
 
+<% if @current_turn == 0 %>
+ <h1> <%= @game.player2.name %>'s turn!</h>
+<% else %>
+  <h1> <%= @game.player1.name %>'s turn!</h>
+<% end %>
+
 <% if @attacked %>
   Your attack on <%= @game.player2.name %> landed!
 <% end %>

@@ -23,7 +23,8 @@ class Battle < Sinatra::Base
 
   post '/attack' do
     @game = $game
-    $game.attack($game.player2)
+    @game.attack(@game.player2)
+    @current_turn = @game.turn_count % 2
     @attacked = true
     erb :play
   end
