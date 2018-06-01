@@ -1,0 +1,20 @@
+
+# As player 1,
+# So I can win a game of Battle,
+# I want to attack Player 2, and I want to get a confirmation
+
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   app.rb
+#	new file:   spec/features/attack_players_spec.rb
+#	modified:   spec/features/enter_names_spec.rb
+#	new file:   spec/features/view_hitpoints_spec.rb
+#	new file:   spec/features/web_helpers.rb
+#	modified:   spec/spec_helper.rb
+#	modified:   views/play.erb
+#	new file:   views/view_hitpoints.erb
+#
