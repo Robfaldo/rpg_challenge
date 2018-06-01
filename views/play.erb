@@ -1,7 +1,13 @@
 <h1> <%= "#{@player_1} vs #{@player_2}" %> </h>
 
-  <h1> <%= "#{@player_1} vs #{@player_2_hitpoints}" %> </h>
-
 <div class="player_2_hitpoints">
  <progress value=<%= @player_2_hitpoints.to_s %> max="100" ></progress>
 </div>
+
+<form action="/attack" method="post">
+  <button type="submit" name="attack_p2" formmethod="post">ATTACK!</button>
+</form>
+
+<% if @attacked %>
+  <%= "Your attack on #{@player_2} landed!" %>
+<% end %>
